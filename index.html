@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarlosFitness</title>
+    <link rel="shortcut icon" href="./images/dllar.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Curso Motivacional</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#inicio" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#reseñas" class="nav__links">Reseñas</a>
+                </li>
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section id="inicio" class="hero__container container">
+            <h1 class="hero__title">Aprende a ser la mejor versión de tí mismo</h1>
+            <p class="hero__paragraph">Deja tu vida llena de vicios y lujuria, ha llegado la hora de convertirte en el MEJOR</p>
+            <a href="#cursos" class="cta">Comienza ahora</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">¿Qué aprenderás en este curso?</h2>
+            <p class="about__paragraph">Todo lo necesario para cambiar tu lifestyle, ganar dinero de manera ostentosa y ser una BESTIA</p>
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/mente.avif" class="about__icon">
+                    <h3 class="about__title">Mentalidad</h3>
+                    <p class="about__paragrah">Con la mentalidad adecuada no existen limites, la única limitación está siempre en tu cabeza</p>
+                </article>
+                <article class="about__icons">
+                    <img src="./images/fiisico.png" class="about__icon">
+                    <h3 class="about__title">Físico</h3>
+                    <p class="about__paragrah">Mens sana in corpore sano. Tu cuerpo es un templo, es imprescindible cuidar tu cuerpo para poder llegar a tener éxitos </p>
+                </article>
+                <article class="about__icons">
+                    <img src="./images/ECONOMIA.png" class="about__icon">
+                    <h3 class="about__title">Economía</h3>
+                    <p class="about__paragrah">Olvídate de llegar ahogado a fin de mes. con mis metodos no te volverás a preocupar por esto.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Curso completo de Carlos Fitness. ¡Domina tu vida de una vez por todas!</h2>
+                    <p class="knowledge__paragraph">Descubre tu máximo potencial con nuestros cursos motivacionales. Transforma tu vida, alcanza tus metas y encuentra la inspiración que necesitas para triunfar. Únete a nuestra comunidad y desbloquea un futuro lleno de posibilidades</p>
+                    <a href="#" class="cta">Entra al curso</a>
+                </div>
+                <figure class="knowledge__picture">
+                    <img src="./images/coach.jpeg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section id="cursos" class="price container">
+            <h2 class="subtitle">Obten el curso perfecto para iniciarte</h2>
+            <div class="price__table">
+                <div class="price__element">
+                    <p class="price__name">Mileurista</p>
+                    <h3 class="price__price">Gratis</h3>
+                    <div class="price__items">
+                        <p class="price__features">Mentalidad</p>
+                        <p class="price__features">Economía</p>
+                        <p class="price__features">Físico</p>
+                    </div>
+                    <button class="price__cta" onclick="agregarAlCarrito('Mileurista')">Empieza ahora</button>
+                </div>
+                <div class="price__element price__element--best">
+                    <p class="price__name">Basic Pack</p>
+                    <h3 class="price__price">30€/mes</h3>
+                    <div class="price__items">
+                        <p class="price__features">Cómo iniciar este proceso</p>
+                        <p class="price__features">Rendimiento</p>
+                        <p class="price__features">eficiencia</p>
+                    </div>
+                    <button class="price__cta" onclick="agregarAlCarrito('Basic Pack')">Empieza ahora</button>
+                </div>
+                <div class="price__element">
+                    <p class="price__name">Premium Pack</p>
+                    <h3 class="price__price">40€/mes</h3>
+                    <div class="price__items">
+                        <p class="price__features">Clases Personalizadas</p>
+                        <p class="price__features">Auditoría de tus cuentas</p>
+                        <p class="price__features">Reuniones en persona</p>
+                    </div>
+                    <button class="price__cta" onclick="agregarAlCarrito('Premium Pack')">Empieza ahora</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="reseñas" class="testimony">
+            <div class="testimony__container container">
+                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Javier Carrillo, <span class="testimony__course">Alumno.</span></h2>
+                        <p class="testimony__review">Este curso de motivación online ha sido una revelación. Sus consejos prácticos y la pasión del instructor me han inspirado como nunca antes. ¡Totalmente recomendado para aquellos que buscan un cambio positivo en sus vidas!</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/javi.jpg" class="testimony__img">
+                    </figure>
+                </section>
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Nacho Medrano, <span class="testimony__course">alumno BASIC.</span></h2>
+                        <p class="testimony__review">Incréible experiencia con este curso de motivación. Sus lecciones claras y ejercicios aplicables me han dado un impulso real. No puedo recomendarlo lo suficiente para cualquiera que busque un cambio positivo.</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/nacho.jpg" class="testimony__img">
+                    </figure>
+                </section>
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Daniel Bautista, <span class="testimony__course">Alumno PREMIUM</span></h2>
+                        <p class="testimony__review">El curso de motivación online ha sido un verdadero salvavidas. Sus lecciones simples pero poderosas me han ayudado a superar obstáculos y mantenerme enfocado en mis metas. ¡Definitivamente lo recomiendo a todos!</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/dani.jpg" class="testimony__img">
+                    </figure>
+                </section>
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Jun Xu, <span class="testimony__course">Alumno PREMIUM.</span></h2>
+                        <p class="testimony__review">No puedo expresar lo transformador que ha sido este curso de motivación para mí. Sus lecciones han redefinido mi enfoque hacia la vida y me han dado las herramientas necesarias para el éxito. Si estás buscando un cambio, este es el curso para ti.</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/jun.jpg" class="testimony__img">
+                    </figure>
+                </section>
+                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
+            </div>
+        </section>
+
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas frecuentes</h2>
+            <p class="questions__paragraph">Si tienes alguna pregunta, no dudes en contactarnos</p>
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué es CarlosFitness? <span class="questions__arrow"> <img src="./images/arrow.svg" class="questions__img"> </span> </h3>
+                        <p class="questions__show">Descubre tu potencial con nuestros cursos motivacionales. Aprende estrategias prácticas, supera obstáculos y alcanza tus metas. Únete ahora para comenzar tu viaje hacia una vida más plena y satisfactoria.</p>
+                    </div>
+                </article>
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Realmente merece la pena? <span class="questions__arrow"> <img src="./images/arrow.svg" class="questions__img"> </span> </h3>
+                        <p class="questions__show">Sí, mi curso merece la pena. Ofrece estrategias probadas y apoyo personalizado para ayudarte a alcanzar tus metas y desbloquear tu potencial máximo. Es una inversión valiosa en tu crecimiento personal y éxito futuro.</p>
+                    </div>
+                </article>
+            </section>
+            <section id="inicio" class="questions__offer">
+                <h2 class="subtitle">¿Estas listo para empezar?</h2>
+                <p class="questions__copy">Si estás aquí, es porque estás listo para transformar tu vida. Te guiaré paso a paso hacia tus metas más ambiciosas. No esperes más, el momento para empezar es ahora. ¡Estoy emocionado de ser parte de tu viaje hacia el éxito!</p>
+                <a href="#cursos" class="cta">Empieza ahora</a>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Curso CarlosFitness.</h2>
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#inicio" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#reseñas" class="nav__links">Reseñas</a>
+                    </li>
+                </ul>
+            </nav>
+            <section id="carrito" class="carrito container">
+                <h2 class="subtitle">Carrito de Compras</h2>
+                <ul id="listaCarrito"></ul>
+                <p>Total: <span id="totalCarrito">0€</span></p>
+            </section>
+        
+            <section id="formulario" class="container formulario">
+                <h2 class="subtitle">Formulario de Registro</h2>
+                <form action="#" method="post" class="formulario__form" id="formularioRegistro">
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__label">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="formulario__input" required>
+                    </div>
+                    <div class="formulario__grupo">
+                        <label for="apellido" class="formulario__label">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" class="formulario__input" required>
+                    </div>
+                    <div class="formulario__grupo">
+                        <label for="correo" class="formulario__label">Correo:</label>
+                        <input type="email" id="correo" name="correo" class="formulario__input" required>
+                    </div>
+                    <button type="submit" class="formulario__boton">Enviar</button>
+                </form>
+            </section>
+        
+            <script src="./js/slider.js"></script>
+            <script src="./js/questions.js"></script>
+            <script src="./js/menu.js"></script>
+            <script>
+                function agregarAlCarrito(curso) {
+                    alert('Agregaste "' + curso + '" al carrito.');
+               
+                    const listaCarrito = document.getElementById('listaCarrito');
+                    const totalCarrito = document.getElementById('totalCarrito');
+        
+              
+                    const elementoCarrito = document.createElement('li');
+                    elementoCarrito.textContent = curso;
+        
+                  
+                    listaCarrito.appendChild(elementoCarrito);
+        
+                  
+                    totalCarrito.textContent = parseInt(totalCarrito.textContent) + 1;
+                }
+            </script>
+        </section>
+    </footer>
+</body>
+
+</html>
